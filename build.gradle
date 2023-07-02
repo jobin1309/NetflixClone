@@ -4,6 +4,7 @@ buildscript {
         jcenter()
         mavenCentral()
     }
+
     dependencies {
         def nav_version = "2.5.3"
         ext.kotlin_version = "1.8.0"
