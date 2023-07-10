@@ -1,9 +1,11 @@
-package com.example.netflixclone
+package com.example.netflixclone.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.NavHost
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.netflixclone.R
 import com.example.netflixclone.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,6 +22,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
 
         var navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHost
 

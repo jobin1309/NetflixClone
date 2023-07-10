@@ -33,10 +33,12 @@ android {
     kotlinOptions {
         jvmTarget = '17'
     }
+    dataBinding {
+        enabled = true
+    }
 
     buildFeatures {
         viewBinding = true
-        dataBinding = true
     }
 }
 
@@ -106,11 +108,14 @@ dependencies {
     // Image Loading library Coil
     implementation "io.coil-kt:coil:2.3.0"
 
+    // Paging 3
+    implementation "androidx.paging:paging-runtime:3.0.0"
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     // Jsoup
     implementation 'org.jsoup:jsoup:1.13.1'
-
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
-
 
 }

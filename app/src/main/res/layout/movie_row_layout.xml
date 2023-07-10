@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="210dp"
+        android:layout_height="328dp"
+        android:background="@drawable/bg_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/firstImageView"
+            android:layout_width="187dp"
+            android:layout_height="259dp"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundImageView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="210dp"
+            android:layout_height="58dp"
+            android:background="#62151414"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/movieNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Movie Name"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view">
+
+        </TextView>
+
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="182dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/firstImageView" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movieNameText">
+
+            <ImageView
+                android:id="@+id/dateImage"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="3dp"
+                app:srcCompat="@drawable/baseline_date_range_24" />
+
+
+            <TextView
+                android:id="@+id/MovieDateText"
+                android:layout_width="79dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="2023/05/17"
+                android:gravity="center"
+                android:textColor="@color/white"></TextView>
+
+
+            <ImageView
+                android:id="@+id/likeImage"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/baseline_thumb_up_alt_24" />
+
+            <TextView
+                android:id="@+id/likesText"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="234533"
+                android:gravity="center"
+                android:textColor="@color/white"
+               />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="197dp"
+        android:layout_height="328dp"
+        android:background="@drawable/bg_color"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/SecondimageView"
+            android:layout_width="189dp"
+            android:layout_height="261dp"
+            app:layout_constraintBottom_toTopOf="@+id/movieNameText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="192dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="4dp"
+            android:background="#62151414"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/movieNameText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Movie Name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/secondView"
+            app:layout_constraintEnd_toEndOf="@+id/secondView"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/secondView"
+            app:layout_constraintVertical_bias="0.0">
+
+        </TextView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movieNameText2">
+
+            <ImageView
+                android:id="@+id/dateImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="3dp"
+                app:srcCompat="@drawable/baseline_date_range_24" />
+
+            <TextView
+                android:id="@+id/MovieDateText2"
+                android:layout_width="79dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="2023/05/17"
+                android:textColor="@color/white"></TextView>
+
+
+            <ImageView
+                android:id="@+id/likeImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginEnd="3dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/likesText2"
+                app:layout_constraintEnd_toEndOf="@+id/movieNameText2"
+                app:layout_constraintStart_toEndOf="@+id/MovieDateText2"
+                app:layout_constraintTop_toTopOf="@+id/likesText2"
+                app:layout_constraintVertical_bias="0.6"
+                app:srcCompat="@drawable/baseline_thumb_up_alt_24" />
+
+            <TextView
+                android:id="@+id/likesText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:text="23453"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
